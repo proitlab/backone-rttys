@@ -2,7 +2,9 @@
   <div style="padding:5px;">
     <Button style="margin-right: 4px;" type="primary" shape="circle" icon="ios-refresh" @click="handleRefresh" :disabled="loading">{{ $t('Refresh List') }}</Button>
     <Input style="margin-right: 4px;width:200px" v-model="filterString" search @input="handleSearch" :placeholder="$t('Please enter the filter key...')"/>
+    <!--
     <Button style="margin-right: 4px;" @click="showCmdForm" type="primary" :disabled="cmdStatus.execing > 0">{{ $t('Execute command') }}</Button>
+    -->
     <!--
     <Button v-if="isadmin" style="margin-right: 4px;" @click="showBindForm" type="primary">{{ $t('Bind user') }}</Button>
     -->
