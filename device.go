@@ -209,8 +209,6 @@ func (dev *device) readLoop() {
 
 		typ := b[0]
 
-		// Add Debug
-		log.Debug().Msgf("b value: %s", b)
 		if typ > msgTypeMax {
 			log.Error().Msgf("invalid msg type: %d", typ)
 			return
