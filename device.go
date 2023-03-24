@@ -211,6 +211,7 @@ func (dev *device) readLoop() {
 
 		if typ > msgTypeMax {
 			log.Error().Msgf("invalid msg type: %d", typ)
+			log.Error().Msgf("Why Error 1?")
 			return
 		}
 
@@ -294,6 +295,7 @@ func (dev *device) readLoop() {
 
 		default:
 			log.Error().Msgf("invalid msg type: %d", typ)
+			log.Error().Msgf("Why Error 2?")
 		}
 	}
 }
